@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Terraform Apply') {
             steps {
-                sh 'terraform apply -auto-approve planfile'
+                sh 'terraform apply -parallelism=20 -auto-approve planfile'
             }
         }
     }
