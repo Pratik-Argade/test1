@@ -1,4 +1,3 @@
-#file to create aws resource using the terraform
 pipeline {
     environment {
         AWS_ACCESS_KEY_ID = credentials('Access-key')
